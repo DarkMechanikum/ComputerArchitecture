@@ -50,10 +50,6 @@ zero_six:
         la t0, answer2
         j write_answer
         ret
-zero_six:
-        la t0, answer2
-        j write_answer
-        ret
 zero_seven:
         la t0, answer3
         j write_answer
