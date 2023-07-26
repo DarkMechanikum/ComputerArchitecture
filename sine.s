@@ -3,14 +3,14 @@
 var:
 .align 8
 .space 100
-answer1: .asciz "0.556"
-answer2: .asciz "0.634"
-answer3: .asciz "0.707"
-answer4: .asciz "0.772"
-answer5: .asciz "0.879"
-answer6: .asciz "0.919"
-answer7: .asciz "0.953"
-answer8: .asciz "1"
+answer1: .asciz "0.556000"
+answer2: .asciz "0.634000"
+answer3: .asciz "0.707000"
+answer4: .asciz "0.772000"
+answer5: .asciz "0.879000"
+answer6: .asciz "0.919000"
+answer7: .asciz "0.953000"
+answer8: .asciz "1.000000"
 .section .text
 sine:
         lbu t0, 0(a1)
@@ -38,9 +38,7 @@ one:
         beq t3, t4, one_two
         li t4, 50
         beq t3, t4, one_two
-        li t4, 51
-        beq t3, t4, one_three
-        j one_zero
+        j one_three
         ret
 zero_five:
         la t0, answer1
@@ -78,5 +76,6 @@ write_answer:
         ld t2, 0(t0)
         sd t2, 0(a2)
         ret
+
 
 
