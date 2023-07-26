@@ -1,17 +1,16 @@
 .globl sine
-default_answer = 0x312d
 .section .data
 var:
 .align 8
 .space 100
-answer1: .asciz "0.5560"
-answer2: .asciz "0.6340"
-answer3: .asciz "0.7070"
-answer4: .asciz "0.7720"
-answer5: .asciz "0.8790"
-answer6: .asciz "0.9190"
-answer7: .asciz "0.9530"
-answer8: .asciz "1.0000"
+answer1: .asciz "0.556"
+answer2: .asciz "0.634"
+answer3: .asciz "0.707"
+answer4: .asciz "0.772"
+answer5: .asciz "0.879"
+answer6: .asciz "0.919"
+answer7: .asciz "0.953"
+answer8: .asciz "1"
 .section .text
 sine:
         lbu t0, 0(a1)
